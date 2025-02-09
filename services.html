@@ -8,42 +8,39 @@
 </head>
 <body>
 
-<!-- منوی همبرگری -->
-<div class="navbar">
+<!-- هدر و منو -->
+<header>
     <div class="logo">
-        <img src="logo.png" alt="Logo">
+        <img src="https://eris4444.github.io/test/assets/logo.jpeg" alt="Logo">
     </div>
-    <div class="menu-icon" id="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav class="nav-links" id="nav-links">
-        <ul>
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="about.html">درباره ما</a></li>
-            <li><a href="services.html">دوره‌ها</a></li>
-            <li><a href="gallery.html">گالری</a></li>
-            <li><a href="contact.html">تماس با ما</a></li>
-        </ul>
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="about.html">درباره ما</a>
+        <a href="courses.html">دوره‌ها</a>
+        <a href="gallery.html">گالری</a>
+        <a href="contact.html">تماس با ما</a>
     </nav>
-</div>
+</header>
 
 <!-- محتوای صفحه دوره‌ها -->
-<div class="content">
+<main>
     <h1>دوره‌ها</h1>
-    <p>ما مجموعه‌ای از دوره‌های آموزشی در زمینه‌های مختلف داریم. برای اطلاعات بیشتر و ثبت‌نام، از منوی همبرگری استفاده کنید.</p>
-</div>
+    <p>ما مجموعه‌ای از دوره‌های آموزشی در زمینه‌های مختلف ارائه می‌دهیم. برای اطلاعات بیشتر و ثبت‌نام، دوره مورد نظر خود را انتخاب کنید.</p>
 
-<script>
-    // اسکریپت برای منوی همبرگری
-    const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('nav-links');
+    <!-- بخش دوره‌ها -->
+    <section class="course-section">
+        <div class="course-box">
+            <h2>دوره آنلاین</h2>
+            <p>ثبت نام در این دوره از طریق ربات تلگرام انجام می‌شود.</p>
+            <a href="https://t.me/serveraebot" class="btn">ثبت نام از طریق ربات</a>
+        </div>
+    </section>
+</main>
 
-    menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-</script>
+<!-- فوتر -->
+<footer>
+    <p>تمامی حقوق محفوظ است &copy; 2025</p>
+</footer>
 
 </body>
 </html>
